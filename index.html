@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitro Dash - Car Racing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Dashboard for Score -->
+        <div id="dashboard">
+            <div class="stat">SCORE: <span id="score">0</span></div>
+            <div class="stat">SPEED: <span id="speed">1</span>x</div>
+        </div>
+
+        <!-- The Road -->
+        <div id="game-area">
+            <div id="road">
+                <!-- Road lines will be added/animated via CSS/JS -->
+            </div>
+            <div id="player"></div>
+        </div>
+
+        <!-- Overlays -->
+        <div id="overlay" class="visible">
+            <div id="modal">
+                <h1 id="modal-title">Nitro Dash</h1>
+                <p id="modal-desc">Use Arrow Keys or WASD to dodge traffic!</p>
+                
+                <div id="game-over-info" class="hidden">
+                    <p>Final Score: <span id="final-score">0</span></p>
+                </div>
+
+                <button id="start-btn">Start Race</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
